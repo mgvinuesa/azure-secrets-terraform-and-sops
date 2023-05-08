@@ -1,0 +1,7 @@
+db-password:
+    value: fd4fg!sxAz46
+    description: Contraseña de BD
+kafka-password:
+    value: Zdj!34fzAg8_
+    description: Contraseña de Broker de Kafka
+

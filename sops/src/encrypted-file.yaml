@@ -1,0 +1,22 @@
+db-password:
+    value: ENC[AES256_GCM,data:oPuPPFRT89YVJtDo,iv:m8EyD6MFirlpX5p4S012ovROxw/SGqsLlGv9m2vzmww=,tag:r/SHCbWIQ7HRDJM+swQlXQ==,type:str]
+    description: ENC[AES256_GCM,data:6tVAwkY1ymrsU6H7z8fePls=,iv:KbOWDLZ2JUlJoDI18KAa3HFmjmljPiJFNDnPKWCB9Nc=,tag:MtvJ7w81jPr6a74MVCc1qg==,type:str]
+kafka-password:
+    value: ENC[AES256_GCM,data:QHzFPOyvTXQR7wfm,iv:jz6oSxJTP3HyIe6UnqOkHzJ/SZzpWTrZMgsET/WQ1Po=,tag:3fXTbMVT3LqPG/eOF8xhzg==,type:str]
+    description: ENC[AES256_GCM,data:ZIgk4d7bluX+wqDtEfQPwEwIfFxa6kgtKxWzCWzB,iv:wei3MmdRzejxZ7QVRg4mNpCWmSVuaXoo1g6wtBccNTE=,tag:CC+/6xxuFI80oudyQYCnlg==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv:
+        - vault_url: https://<VAULT_URL>
+          name: sops-key
+          version: e5b9c8a1f0654cdbbabea8233b4692a1
+          created_at: "2023-05-08T08:20:04Z"
+          enc: DSfTMiYOetq2fmX07_5SjqrwbGpkBh9l42PhpH5wraX1ZxB25GIk3O7nnMpkjxyrmwsaoJDfPvY8M_FPSRUB_h3fdNGdZ26K5NM7FPpe7w4zVrf-2h5VCKqRLiFL5tQU_dEzM1XMMaUqQTYh0cqo_b_6ygJCSfzYBdegqp8hR7LWtYEE5t0P7QdyjP5uiRyA8Nh0cBdgv9aAqy1TxbuQRqp-6_34__myL6PNfOVsH10R2x9HmZrTJ9l7MaWe6yX5uQTt8qh_b22YoAr5XkbMrw5TLGI_F6kG-g7S0UhKV_4nnpSMFzj_fgvlzfqUMyEybspbkV7h-tF0lsaZV8rnrw
+    hc_vault: []
+    age: []
+    lastmodified: "2023-05-08T08:20:05Z"
+    mac: ENC[AES256_GCM,data:2EAhmoBPb9zPkOry6DEgcmix4o/6OhB3wXLlZlz5V8GdzkfnqIsZ4f05jRIKS7StSBGfzfHN0Svvod5rGp6SS90lREDe105nACoIbaCInEs5V+7slWjgG24jiA8f+AefkdFe5NAnk20E7H+/PgFrE4nSR9m/ZxB+JPhLyl29XSk=,iv:yY339DTz2v0UGNkIDrv5UT/xd1IPAMT2ibDtAZLmSts=,tag:k3vDhCVKBhj0OvC0DYfsmg==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.3
