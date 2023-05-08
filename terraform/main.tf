@@ -23,7 +23,7 @@ output "sops_key" {
 }
 
 
-data "sops_file" "charset" {
+data "sops_file" "file" {
   source_file = "../sops/src/encrypted-file.yaml"
 }
 
@@ -31,7 +31,7 @@ data "sops_file" "charset" {
 resource "azurerm_key_vault_secret" "key_vault_secret" {
     for_each                = toset(local.secrets)
     name                    = "${each.key}-secret"
-    value                   = data.sops_file.charset.data["${each.key}.value"]
+    value                   = data.sops_file.file.data["${each.key}.value"]
     key_vault_id            = data.azurerm_key_vault.keyvault.id
 }
 
